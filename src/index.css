@@ -1,13 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin:                  0;
+    font-family:             -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+                             "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+                             sans-serif;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+                 monospace;
 }
+
+html, body {
+    height: 100%;
+    
+}
+
+
+#root {
+    height: 100%
+}
+
+.ui.items > .item:hover {
+    background-color: green;
+}
+
+.search-center {
+    display:         flex;
+    align-items:     flex-end;
+    justify-content: center;
+    height:          40%;
+}
+
+.search-top {
+    display:         flex;
+    align-items:     flex-start;
+    justify-content: center;
+}
+
+.ui.fullscreen.modal {
+    margin: 1rem 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    #item-image {
+        width: 5rem !important;
+    }
+    
+    #item-content {
+        margin-left: 1rem;
+    }
+    
+    .ui.modal .image.content {
+        flex-direction: row !important;
+    }
+    
+    #modal-description {
+        padding: 0 .5rem !important;
+    }
+}
+
+
+
